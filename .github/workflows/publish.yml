@@ -1,0 +1,30 @@
+name: Publish to Zenodo
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '*.md'           # Trigger only when papers change
+      - 'zenodo_publisher.py'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests
+
+      - name: Run Publisher Script
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+        run: |
+          python zenodo_publisher.py
