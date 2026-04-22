@@ -5,7 +5,9 @@ on:
       - main
     paths:
       - '*.md'           # Trigger only when papers change
+      - '*.zip'          # Add zip artifacts
       - 'zenodo_publisher.py'
+  workflow_dispatch:     # Manual trigger
 
 jobs:
   publish:
@@ -22,6 +24,15 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install requests
+
+      - name: Verify Archive Integrity
+        run: |
+          if [ -f "mcp-tool-dissonance-v1.0.0-podman.zip" ]; then
+            echo "Archive found, verifying..."
+            unzip -l mcp-tool-dissonance-v1.0.0-podman.zip
+            FILE_COUNT=$(unzip -l mcp-tool-dissonance-v1.0.0-podman.zip | grep -c "mcp-tool-dissonance")
+            echo "File count: $FILE_COUNT"
+          fi
 
       - name: Run Publisher Script
         env:

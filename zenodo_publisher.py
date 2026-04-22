@@ -11,6 +11,7 @@ ACCESS_TOKEN = os.environ.get('ZENODO_TOKEN')
 FILE_1_NAME = "Beyond Retry_ A Metacognitive Dynamics Framework for Autonomous Agent Failure Recovery.md"
 FILE_2_NAME = "The Landauer Context_ A Physics-Grounded Energy Basis for Large Language Model Orchestration.md"
 FILE_3_NAME = "Dissonance-Weighted Eviction_ A Hybrid LRU Protocol for Long-Horizon Agent Memory.md"
+FILE_4_NAME = "mcp-tool-dissonance-v1.0.0-podman.zip"
 
 # --- 3. IDENTITY & DOI CONFIGURATION ---
 AUTHOR_NAME = "Holt, Igor"
@@ -69,24 +70,35 @@ papers = [
     },
     {
         "id": PAPER_3_ID,
-        "file": FILE_3_NAME,
+        "file": FILE_4_NAME,
         "metadata": {
-            "title": "Dissonance-Weighted Eviction: A Hybrid LRU Protocol for Long-Horizon Agent Memory",
-            "upload_type": "publication",
-            "publication_type": "workingpaper",
-            "description": "<b>System:</b> LID-LIFT Orchestrator v1.4<br><b>Series:</b> Part 3 of the LID-LIFT Technical Suite<br><br><b>Abstract:</b><br>Long-horizon autonomous agents suffer from 'context drift'—the accumulation of contradictory or obsolete information within the sliding context window. Traditional Least Recently Used (LRU) policies preserve data based on temporal recency, regardless of its semantic validity. This paper introduces Dissonance-Weighted Eviction (DWE), a core component of the HMIC-PPT Memory Model. By multiplying temporal decay with a 'Semantic Dissonance' coefficient (derived from entailment scoring against the active plan), DWE proactively purges conflicting data. We demonstrate that this hybrid policy significantly reduces 'agent schizophrenia' (the oscillating behavior between two contradictory instructions) in constraints-heavy environments.<br><br>TECHNICAL KEYWORDS:<br>RAG, Vector Databases, Context Window Management, Hallucination, Memory Hygiene, Semantic Search, LRU Algorithms.",
+            "title": "MCP Tool Dissonance: Podman Container Implementation",
+            "upload_type": "software",
+            "description": "<b>System:</b> LID-LIFT Orchestrator v1.4<br><b>Series:</b> Part 3 of the LID-LIFT Technical Suite<br><br><b>Package:</b> mcp-tool-dissonance-v1.0.0-podman<br><b>Platform:</b> Podman (OCI-compatible)<br><br><b>Abstract:</b><br>Production-ready container implementation of the Dissonance-Weighted Eviction (DWE) algorithm. This package provides a Podman-native deployment of the MCP (Model Context Protocol) tool for long-horizon agent memory management. Features include: distroless container base, non-root execution (UID 65532), Quadlet systemd integration, and 4 deployment methods.<br><br><b>Security Features:</b><br>- Rootless operation (UID 65532)<br>- NoNewPrivileges enforced<br>- All capabilities dropped<br>- Distroless base (no shell)<br>- Auto-update compatible<br><br><b>Files:</b> 15<br><b>Go Lines:</b> 750<br><br>TECHNICAL KEYWORDS:<br>MCP, Podman, Container Security, DWE Algorithm, Agent Memory, OCI, Quadlet, Distroless.",
             "creators": [{
                 "name": AUTHOR_NAME,
                 "affiliation": "Independent Researcher",
                 "orcid": AUTHOR_ORCID
             }],
-            "keywords": ["RAG", "Vector Databases", "Memory Hygiene"],
+            "keywords": ["MCP", "Podman", "Container Security", "DWE Algorithm", "Agent Memory"],
+            "version": "1.0.0",
+            "language": "eng",
             "related_identifiers": [
                 {
-                    "relation": "cites",
+                    "relation": "isPartOf",
                     "identifier": f"10.5281/zenodo.{PAPER_1_ID}",
                     "resource_type": "publication-workingpaper",
                     "scheme": "doi"
+                },
+                {
+                    "relation": "references",
+                    "identifier": "arXiv:2604.11322",
+                    "scheme": "arxiv"
+                },
+                {
+                    "relation": "references",
+                    "identifier": "arXiv:2604.11288",
+                    "scheme": "arxiv"
                 }
             ]
         }
