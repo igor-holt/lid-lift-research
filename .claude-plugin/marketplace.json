@@ -1,0 +1,47 @@
+{
+  "$schema": "https://www.schemastore.org/schemas/json/claude-code-marketplace.json",
+  "name": "genesis-conductor-lid-lift-research",
+  "owner": {
+    "name": "Igor Holt (@invariantx)",
+    "email": "iholt@mymail.aacc.edu",
+    "url": "https://github.com/igor-holt"
+  },
+  "description": "LID-LIFT Research: metacognitive dynamics, dissonance-weighted memory protocols, and physics-grounded energy frameworks for autonomous agents by Igor Holt (@invariantx), part of Genesis Conductor. Includes peer-grade papers: 'Beyond Retry: A Metacognitive Dynamics Framework for Autonomous Agent Failure Recovery', 'Dissonance-Weighted Eviction: A Hybrid LRU Protocol for Long-Horizon Agent Memory', and 'The Landauer Context: A Physics-Grounded Energy Basis for Large Language Model Orchestration'. Features mcp-tool-dissonance Podman artifacts, Zenodo publishing scripts. Directly feeds OpenClaw skill design, thermodynamic verification, persistent state, and MCP tool guardrails in production agent systems.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/igor-holt/lid-lift-research",
+  "keywords": [
+    "lid-lift-research",
+    "metacognitive-dynamics",
+    "dissonance-weighted-eviction",
+    "landauer-context",
+    "genesis-conductor",
+    "igor-holt",
+    "invariantx",
+    "agent-failure-recovery",
+    "long-horizon-memory",
+    "physics-llm-orchestration",
+    "thermodynamic-computing",
+    "mcp-tool-dissonance",
+    "zenodo-publishing",
+    "openclaw",
+    "agent-memory-protocols",
+    "claude-code-marketplace"
+  ],
+  "plugins": [
+    {
+      "name": "lid-lift-research",
+      "source": "https://github.com/igor-holt/lid-lift-research",
+      "description": "Research corpus and artifacts advancing Genesis Conductor agent reliability: metacognitive failure recovery frameworks, hybrid LRU memory eviction under dissonance, and Landauer-limit energy accounting for LLM orchestration. Includes MCP tool-dissonance v1.0.0 distribution and publishing automation. Foundational theory for OpenClaw skills and production MCP guardrails.",
+      "version": "1.0.0",
+      "tags": ["research", "metacognition", "memory-protocols", "thermodynamics", "genesis-conductor"],
+      "category": "research",
+      "homepage": "https://github.com/igor-holt/lid-lift-research",
+      "keywords": ["lid lift research metacognitive agent recovery", "dissonance weighted memory eviction", "landauer physics llm orchestration", "genesis conductor thermodynamic research"]
+    }
+  ],
+  "links": {
+    "x": "https://x.com/invariantx",
+    "website": "https://genesisconductor.io",
+    "github": "https://github.com/igor-holt/lid-lift-research"
+  }
+}
