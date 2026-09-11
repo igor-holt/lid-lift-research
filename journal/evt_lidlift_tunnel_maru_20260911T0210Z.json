@@ -1,0 +1,19 @@
+{
+  "evt_id": "evt_lidlift_tunnel_maru_20260911T0210Z",
+  "schema_version": "1.0",
+  "record_type": "reassessment",
+  "recorded_at": "2026-09-11T02:12:00Z",
+  "orcid_attribution": "0009-0008-8389-1297",
+  "tags": ["tunnel-through", "objective:financial-infrastructure", "maru-nox", "lid-lift", "market-research", "journal"],
+  "status": "validated",
+  "assessment": "PASSED | R=0.62 | REFRAMED | claim-product-price basin; #!nox to attested-shadow-on-existing-traces",
+  "maru": {
+    "evt_id": "maru-reframe-lidlift-gtm-20260911",
+    "risk_R": 0.62,
+    "reframe_type": "#!nox",
+    "escape_vector": "Sell deadlock-span attestation on traces the customer already has. Activate write-path only after Shadow reconciles to invoices.",
+    "invariant_preserved": true
+  },
+  "dois": ["10.5281/zenodo.17784144", "10.5281/zenodo.17784836"],
+  "public_repos": ["https://github.com/igor-holt/lid-lift-research", "https://github.com/igor-holt/lidlift-mcp"]
+}
